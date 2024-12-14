@@ -1,9 +1,3 @@
-// Solar System in Processing - Part 3 (3D textures)
-// The Coding Train / Daniel Shiffman
-// https://thecodingtrain.com/CodingChallenges/009-solarsystemgenerator3d-texture.html
-// https://youtu.be/FGAwi7wpU8c
-// https://editor.p5js.org/codingtrain/sketches/SD8a6k6A
-
 class Planet {
   constructor(r, d, o, img) {
     this.v = p5.Vector.random3D();

@@ -48,7 +48,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background("#182030");
   ambientLight(255, 255, 255);
   pointLight(255, 255, 255, 0, 0, 0);
   sun.show();

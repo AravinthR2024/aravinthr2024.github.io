@@ -1,23 +1,36 @@
 const heart = [];
 const totalFrames = 240;
 let counter = 0;
+let bgImage;
+
+function preload()
+{
+  bgImage = loadImage("images/Background.jpg");
+}
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth - 2, windowHeight - 2);
 }
 
 function draw() {
   const percent = float(counter % totalFrames) / totalFrames;
   render(percent);
+  fill(255);
+  noStroke();
+  textSize(32);
+  textAlign(CENTER);
+  textFont("Brush Script MT");
+  text("Happy Birthday enoda\nore uyir thozhi\n💖💖💖💖💖💖💖💖💖💖\n\n" + 
+    "என் அன்பு தோழிக்கு\nஇனிய பிறந்தநாள் வாழ்த்துக்கள்\n💕💕💕💕💕💕💕💕💕", 0, -50);
   counter++;
 }
 
 function render(percent) {
-  background(0);
+  background(bgImage);
   translate(width/2, height/2);
-  stroke(255, 0, 200);
+  stroke(255, 0, 0);
   strokeWeight(4);
-  fill(150, 0, 100);
+  fill(150, 0, 20);
   beginShape();
   for (let v of heart) {
     const a = map(percent, 0, 1, 0, TWO_PI*2);
