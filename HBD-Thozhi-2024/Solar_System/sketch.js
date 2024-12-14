@@ -44,7 +44,7 @@ function setup() {
   cam = createEasyCam({ distance: 500 });
 
   sun = new Planet(50, 0, 0, sunTexture);
-  sun.spawnMoons(10, 2);
+  sun.spawnMoons(7, 1);
 }
 
 function draw() {
