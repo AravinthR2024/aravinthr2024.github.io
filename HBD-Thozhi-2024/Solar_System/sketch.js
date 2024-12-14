@@ -35,7 +35,7 @@ function preload() {
 }
 
 function setup() {
-  let canvas = createCanvas(600, 600, WEBGL);
+  let canvas = createCanvas(windowWidth, windowHeight, WEBGL);
   // Disable the context menu on the canvas so the camera can use the right mouse button
   canvas.elt.oncontextmenu = () => false;
 
