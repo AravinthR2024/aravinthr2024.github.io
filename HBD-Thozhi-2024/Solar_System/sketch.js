@@ -28,7 +28,7 @@ const textures = [];
 // Because of the asynchronous nature of file loading in JavaScript, we
 // have to load the images in p5.js' preload() instead of in setup().
 function preload() {
-  sunTexture = loadImage('data/sun.jpg');
+  sunTexture = loadImage('data/Rithi_Papa.jpg');
   textures[0] = loadImage('data/mars.jpg');
   textures[1] = loadImage('data/earth.jpg');
   textures[2] = loadImage('data/mercury.jpg');
