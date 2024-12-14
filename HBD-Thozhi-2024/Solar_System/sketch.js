@@ -23,11 +23,11 @@ let sun;
 let cam;
 
 let sunTexture;
-let bgImage;
+// let bgImage;
 const textures = [];
 
 function preload() {
-  bgImage = loadImage('data/Background.png');
+  // bgImage = loadImage('data/Background.png');
   sunTexture = loadImage('data/Rithi_Papa.jpg');
   textures[0] = loadImage('data/With_My_Love_1.jpg');
   textures[1] = loadImage('data/With_My_Love_2.jpg');
@@ -50,7 +50,7 @@ function setup() {
 }
 
 function draw() {
-  background(bgImage);
+  background(0);
   ambientLight(255, 255, 255);
   pointLight(255, 255, 255, 0, 0, 0);
   sun.show();
